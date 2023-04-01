@@ -1,0 +1,48 @@
+@mixin maxium-tablet {
+   @media screen and (max-width: 1276px) {
+      @content;
+   }
+      
+}
+@mixin max-tablet {
+   @media screen and (max-width: 1025px) {
+      @content;
+   }
+      
+}
+@mixin min-tablet {
+   @media screen and (max-width: 990px) {
+      @content;
+   }
+      
+}
+@mixin mini-handleTablet {
+   @media screen and (max-width: 930px) {
+      @content;
+   }
+      
+}
+@mixin tablet {
+   @media screen and (max-width: 768px) {
+      @content;
+   }
+      
+}
+@mixin mobile {
+   @media screen and (max-width: 550px) {
+      @content;
+   }
+      
+}
+@mixin min-mobile {
+   @media screen and (max-width: 360px) {
+      @content;
+   }
+      
+}
+@mixin galaxy-fold {
+   @media screen and (max-width: 280px) {
+      @content;
+   }
+      
+}

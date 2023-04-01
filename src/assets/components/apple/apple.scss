@@ -1,0 +1,128 @@
+@import "../media-queries/meadia-queries.scss";
+.appleproduct-grid {
+  width: calc(100% + 8px);
+  margin: -4px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  @include mini-handleTablet{
+    padding-top: 140px;
+  }
+  @include galaxy-fold{
+    padding-top: 195px;
+  }
+  .apple-gridData {
+    padding: 4px;
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+    @include mini-handleTablet {
+      max-width: 50%;
+      flex-basis: 50%;
+    }
+    .appleProduct {
+      width: 100%;
+      cursor: pointer;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 6%),
+        0 0 2px rgb(0 0 0 / 7%);
+      .apple-cartProduct {
+        height: 448px;
+        border-radius: 5px;
+        background: #fff;
+        padding: 10px 12px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .apple-cartProductPadding {
+          .appleinner-image {
+            position: relative;
+            background-color: #fff;
+            .appleinnerImage-container {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-bottom: 0.4px solid #dadada;
+              position: relative;
+              z-index: 0;
+              height: 300px;
+              @include galaxy-fold{
+                height: 200px;
+              }
+              .appleinner-imageOwn {
+                height: 180px;
+                min-width: 112px;
+                max-width: 180px;
+                position: relative;
+              
+                img {
+                  width: inherit;
+                  height: inherit;
+                  @include galaxy-fold{
+                    min-width: 100px;
+                    max-width: 100px;
+                    height: 150px;
+                    margin-top: 15px;
+                  }
+                }
+              }
+            }
+          }
+          .appleProduct-name {
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              p {
+                color: blue;
+                padding: 10px;
+              }
+            }
+            h3 {
+              padding: 5px;
+              color: darkgoldenrod;
+              @include galaxy-fold{
+                font-size: 15px;
+              }
+            }
+          }
+          .manat-month {
+            .cartAmount {
+              display: flex;
+              margin: auto 0;
+              height: 58px;
+              padding-top: 10px;
+              position: relative;
+              .manat {
+                div {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 5px;
+                  p {
+
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #8dc63f;
+                  }
+                  .apple-icon{
+                     svg{
+                        width: 15px;
+                     }
+                     @include galaxy-fold{
+                      margin-top: 22px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

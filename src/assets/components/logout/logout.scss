@@ -1,0 +1,33 @@
+@import "../media-queries/meadia-queries.scss";
+.logout{
+   background-color: greenyellow;
+   width: 100%;
+   flex-basis: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   @include min-tablet{
+      padding: 170px;
+   }
+   h1{
+      color: brown;
+      @include min-tablet{
+         font-size: 18px;
+         width: 100%;
+      }
+      .logout-btn{
+         background-color: blue;
+         color: aliceblue;
+         margin: 5px;
+         padding: 7px;
+         border-radius: 5px;
+      }
+      .emailverified{
+         background-color: blue;
+         color: aliceblue;
+         margin: 3.5px;
+         padding: 7px;
+         border-radius: 5px;
+      }
+   }
+}

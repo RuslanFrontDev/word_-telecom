@@ -1,0 +1,35 @@
+.emptylike{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   box-sizing: border-box;
+   padding-top: 140px;
+   .emptyBasket {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      padding: 50px 50px 505px;
+      width: 100%;
+      flex-direction: column;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      p {
+        margin: 24px 0;
+        font-weight: 600;
+        font-family: Poppins, sans-serif;
+      }
+      a{
+        background-color: #383e42;
+        color: #fff!important;
+        text-align: center;
+        padding: 12px 158px;
+        border-radius: 4px;
+        margin: 32px 0;
+        cursor: pointer;
+      }
+    }
+}

@@ -1,0 +1,90 @@
+{
+   "appleiphone14promax": {
+      "id":1,
+      "imageUrl":"https://w-t.ams3.cdn.digitaloceanspaces.com/images/apple-14-pro-deep-purple-1-min.jpg",
+      "productName": "Apple iPhone 14 Pro Max",
+      "brands": "telefon ve plansetler",
+      "price": 3399,
+      "month":12,
+      "creditPrice":283,
+      "creditDatPrice":25,
+      "surpriz":"negd odenisde 199m endirim"
+   },
+   "appleiphone14pro": {
+      "id":2,
+      "imageUrl":"https://w-t.ams3.cdn.digitaloceanspaces.com/images/apple-14-pro-deep-purple-1-min.jpg",
+      "productName": "Apple iPhone 14 Pro",
+      "brands": "telefon ve plansetler",
+      "price": 3099,
+      "month":12,
+      "creditPrice":258,
+      "creditDatPrice":25,
+      "surpriz":"negd odenisde 199m endirim"
+
+   },
+   "sonyplaystation5": {
+      "id":3,
+      "imageUrl":"https://w-t.ams3.cdn.digitaloceanspaces.com/images/ps5jdnfvkjd.jpg",
+      "productName": "Sony Playstation 5 (PS5)",
+      "brands": "tv, audio ve eylence",
+      "price": 1799,
+      "month":12,
+      "creditPrice":149,
+      "creditDatPrice":92,
+      "surpriz":"negd odenisde 199m endirim"
+
+   },
+   "qadjetaksesuarlar": {
+      "id":4,
+      "imageUrl":"https://www.google.com/url?sa=i&url=https%3A%2F%2Faz.wikipedia.org%2Fwiki%2FQol_saat%25C4%25B1&psig=AOvVaw1iZ-7bqzkXVf9YgBs2GQ0q&ust=1674723163408000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCws56s4vwCFQAAAAAdAAAAABAJ",
+      "productName": "Apple Watch Series 8 45mm",
+      "brands": "Qadjet və aksesuarlar",
+      "price": 1049,
+      "month":12,
+      "creditPrice":97,
+      "creditDatPrice":92
+   },
+   "qulaqliq": {
+      "id":5,
+      "imageUrl":"https://w-t.ams3.cdn.digitaloceanspaces.com/images/airpods-pro-2ci-nesil-1-min.jpg",
+      "productName": "Apple AirPods Pro",
+      "brands": "tv, audio ve eylence",
+      "price": 1049,
+      "month":12,
+      "creditPrice":97,
+      "creditDatPrice":92
+   },
+   "xiaomi": {
+      "id":6,
+      "imageUrl":"https://w-t.ams3.cdn.digitaloceanspaces.com/images/xiaomi-12t-black-1-min.jpg",
+      "productName": "Apple AirPods Pro",
+      "brands": "tv, audio ve eylence",
+      "price": 1049,
+      "month":12,
+      "creditPrice":97,
+      "creditDatPrice":92
+   },
+   "computer": {
+      "id":7,
+      "imageUrl":"https://w-t.ams3.cdn.digitaloceanspaces.com/images/LEOVOOO-min.jpg",
+      "productName": "Lenova 15.6",
+      "brands": "telefon ve plansetler",
+      "price": 1049,
+      "month":12,
+      "creditPrice":97,
+      "creditDatPrice":92
+   },
+   "samsunggalaxy": {
+      "id":8,
+      "imageUrl":"https://w-t.ams3.cdn.digitaloceanspaces.com/images/s22green-min.jpg",
+      "productName": "Samsung Galaxy",
+      "brands": "telefon ve plansetler",
+      "price": 1049,
+      "month":12,
+      "creditPrice":97,
+      "creditDatPrice":92
+   }
+
+   
+   
+}

@@ -1,0 +1,22 @@
+.returnHome{
+   display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 23px 0 8px;
+    a{
+      font-size: 14px;
+      color: #adadad
+    }
+    .homedat{
+      background-color: #adadad;
+      width: 5px;
+      height: 5px;
+      margin: 0 12px;
+      border-radius: 50%;
+    }
+    h5{
+      font-size: 14px;
+      color: #adadad;
+      font-weight:200;
+    }
+}

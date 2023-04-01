@@ -1,0 +1,903 @@
+@import "../../color/colors.scss";
+@import "../../media-queries/meadia-queries.scss";
+.content-category {
+  flex-grow: 0;
+  max-width: 8.333333%;
+  flex-basis: 8.333333%;
+  @include min-tablet{
+    display: none;
+  }
+  .index-container {
+    z-index: 9;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    .contentcategories-margin {
+      width: 89px;
+      height: 590px;
+      background-color: #fff;
+      border: 0.4px solid #dadada;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+      position: sticky !important;
+      top: 8px;
+      left: 0;
+      margin-bottom: 24px;
+      .contentcategories-list {
+        width: 100%;
+        height: 100%;
+        div {
+          .categories {
+            @extend %width-height;
+            font-size: 1rem;
+            @extend %font-weight;
+            line-height: 1.5;
+            color: #212529;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+            .categoryList-ul {
+              display: flex;
+              position: relative;
+              @extend %width-height;
+              justify-content: space-around;
+              flex-direction: column;
+              li {
+                text-align: -webkit-match-parent;
+                .categories-list {
+                  cursor: pointer;
+                  width: 100%;
+                  padding: 10px;
+                  .categories-list-full {
+                    @extend %display-justify;
+                    width: 100%;
+                    .categories-list-flex {
+                      @extend %display-center;
+                      flex-direction: column;
+                      .categories-icon-desc {
+                        width: 44px;
+                        height: 44px;
+                        box-shadow: 0 2px 8px -2px rgb(0 0 0 / 25%);
+                        border-radius: 50%;
+                        @extend %display-center;
+                        &:hover {
+                          background-color: #8dc63f;
+                          opacity: 0.8;
+                        }
+                      }
+                      .categoriesTel-desc {
+                        @extend %display-center;
+                        padding: 2px;
+                        text-align: center;
+
+                        .categories_text {
+                          font-size: 10px;
+                          opacity: 0.7;
+                          font-weight: 500;
+                        }
+                      }
+                    }
+                  }
+                  .categoriesTel-news {
+                    background: #fff;
+                    padding: 16px;
+                    box-shadow: 0 1px 3px rgb(0 0 0 / 12%),
+                      0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+                    border: 0.4px solid #dadada;
+                    border-radius: 8px;
+                    height: 588px;
+                    position: absolute;
+                    width: 1173px;
+                    top: 0;
+                    left: 87.9px;
+                    min-height: 290px;
+                    border-radius: 4px;
+                    display: none;
+                    @include maxium-tablet{
+                      width: 970px;
+                    }
+                    @include min-tablet{
+                      left: 83.9px;
+                    }
+                    @include mobile{
+                      left: 50.9px;
+                    }
+                    div {
+                      width: 100%;
+                      // height: 100%;
+                      flex-direction: row;
+                      .categories-news-tel {
+                        @extend %width-height;
+                        overflow-y: auto;
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 10px;
+                        .categories-news-tel-masonary {
+                          display: flex;
+                          align-items: flex-start;
+                          .categories-news-tel-masonaryColumn {
+                            align-items: flex-start;
+                            width: 100%;
+                            min-height: 100%;
+                            display: flex;
+                            // flex-wrap: wrap;
+                            @include tablet{
+                              flex-wrap: wrap;
+                              width: 275.8px;
+                            }
+                            .tel-amount {
+                              background-clip: padding-box;
+                              margin-right: 75px;
+                              padding-bottom: 30px;
+                              width: 100%;
+                              min-height: 100%;
+
+                              @include tablet{
+                                margin-right: 0;
+                                width: 50%;
+                              }
+                              .tel-amount-link {
+                                width: 9.375rem;
+                                a {
+                                  color: #212529;
+                                  font-weight: 700;
+                                }
+                              }
+                              .telephones-list {
+                                ul {
+                                  li {
+                                    a {
+                                      color: #212529;
+                                      &:hover {
+                                        color: #8dc63f;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            //planset
+                            .planset-amount {
+                              background-clip: padding-box;
+                              margin-right: 75px;
+                              padding-bottom: 30px;
+                              width: 40%;
+                              min-height: 100%;
+                              @include tablet{
+                                margin-right: 0;
+                              }
+                              .planset-amount-link {
+                                width: 9.375rem;
+                                a {
+                                  color: #212529;
+                                  font-weight: 700;
+                                }
+                              }
+                              .planset-list {
+                                ul {
+                                  li {
+                                    a {
+                                      color: #212529;
+                                      &:hover {
+                                        color: #8dc63f;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            //ev telefonu
+                            .homeTel-amount {
+                              background-clip: padding-box;
+                              margin-right: 75px;
+                              padding-bottom: 30px;
+                              width: 100%;
+                              min-height: 100%;
+                              @include tablet{
+                                margin-right: 0;
+                              }
+                              .homeTel-amount-link {
+                                width: 9.375rem;
+                                a {
+                                  color: #212529;
+                                  font-weight: 700;
+                                }
+                              }
+                              .homeTelephone-list {
+                                ul {
+                                  li {
+                                    a {
+                                      color: #212529;
+                                      &:hover {
+                                        color: #8dc63f;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  .categories-list {
+                    .categoriesTel-news {
+                      display: block;
+                    }
+                  }
+                }
+              }
+              li {
+                .categories-list {
+                  cursor: pointer;
+                  width: 100%;
+                  padding: 10px;
+                  .categories-list-full {
+                    @extend %display-justify;
+                    width: 100%;
+                    .categories-list-flex {
+                      @extend %display-center;
+                      flex-direction: column;
+                      .categories-icon-aks {
+                        width: 44px;
+                        height: 44px;
+                        box-shadow: 0 2px 8px -2px rgb(0 0 0 / 25%);
+                        border-radius: 50%;
+                        @extend %display-center;
+                        &:hover {
+                          background-color: #8dc63f;
+                          opacity: 0.8;
+                        }
+                      }
+                      .categoriesAks-desc {
+                        text-align: center;
+                        padding: 2px;
+                        @extend %display-align;
+                        .categories_text {
+                          font-size: 10px;
+                          opacity: 0.7;
+                          font-weight: 500;
+                        }
+                      }
+                    }
+                  }
+                  .categoriesAks-news {
+                    display: none;
+                    background: #fff;
+                    padding: 16px;
+                    box-shadow: 0 1px 3px rgb(0 0 0 / 12%),
+                      0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+                    border: 0.4px solid #dadada;
+                    border-radius: 8px;
+                    height: 588px;
+                    position: absolute;
+                    width: 1173px;
+                    top: 0;
+                    left: 88px;
+                    min-height: 290px;
+                    border-radius: 4px;
+                    @include maxium-tablet{
+                      width: 970px;
+                    }
+                    @include min-tablet{
+                      left: 83.9px;
+                    }
+                    @include mobile{
+                      left: 53.9px;
+                    }
+                   
+                    div {
+                      width: 100%;
+                      // height: 100%;
+                      flex-direction: row;
+                      .categories-news-aks {
+                        @extend %width-height;
+                        overflow-y: auto;
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 10px;
+                        .categories-news-aks-masonary {
+                          display: flex;
+                          align-items: flex-start;
+                          .categories-news-aks-masonaryColumn {
+                            align-items: flex-start;
+                            width: 100%;
+                            min-height: 100%;
+                            display: flex;
+                            @include tablet{
+                              flex-wrap: wrap;
+                              width: 275.8px;
+                            }
+                            // flex-wrap: wrap;
+                            .aks-amount {
+                              background-clip: padding-box;
+                              margin-right: 75px;
+                              padding-bottom: 30px;
+                              width: 100%;
+                              min-height: 100%;
+                              @include tablet{
+                                margin-right: 0;
+                              }
+                              .aks-amount-link {
+                                width: 9.375rem;
+                                a {
+                                  color: #212529;
+                                  font-weight: 700;
+                                }
+                              }
+                              .aksesuar-list {
+                                ul {
+                                  li {
+                                    a {
+                                      color: #212529;
+                                      &:hover {
+                                        color: #8dc63f;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  .categories-list {
+                    .categoriesAks-news {
+                      display: block;
+                    }
+                  }
+                }
+              }
+              li {
+                .categories-list {
+                  cursor: pointer;
+                  width: 100%;
+                  padding: 10px;
+                  .categories-list-full {
+                    @extend %display-justify;
+                    width: 100%;
+                    .categories-list-flex {
+                      @extend %display-center;
+                      flex-direction: column;
+                      .categories-icon-tv {
+                        width: 44px;
+                        height: 44px;
+                        box-shadow: 0 2px 8px -2px rgb(0 0 0 / 25%);
+                        border-radius: 50%;
+                        @extend %display-center;
+                        &:hover {
+                          background-color: #8dc63f;
+                          opacity: 0.8;
+                        }
+                      }
+                      .categoriesTv-desc {
+                        text-align: center;
+                        padding: 2px;
+                        @extend %display-align;
+                        .categories_text {
+                          font-size: 10px;
+                          opacity: 0.8;
+                          font-weight: 500;
+                        }
+                      }
+                    }
+                  }
+                  .categoriesTv-news {
+                    display: none;
+                    background: #fff;
+                    padding: 16px;
+                    box-shadow: 0 1px 3px rgb(0 0 0 / 12%),
+                      0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+                    border: 0.4px solid #dadada;
+                    border-radius: 8px;
+                    height: 588px;
+                    position: absolute;
+                    width: 1173px;
+                    top: 0;
+                    left: 88px;
+                    min-height: 290px;
+                    border-radius: 4px;
+                    @include maxium-tablet{
+                      width: 970px;
+                    }
+                    @include min-tablet{
+                      left: 83.9px;
+                    }
+                    @include mobile{
+                      left: 53.9px;
+                    }
+                    div {
+                      width: 100%;
+                      flex-direction: row;
+                      .categories-news-tv {
+                        width: 100%;
+                        height: 100%;
+                        overflow-y: auto;
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 10px;
+                        .categories-news-tv-masonary {
+                          display: flex;
+                          align-items: flex-start;
+                          @include tablet{
+                            flex-wrap: wrap;
+                            width: 275.8px;
+                          }
+                          .categories-news-tv-masonaryColumn {
+                            align-items: flex-start;
+                            width: 100%;
+                            min-height: 100%;
+                            display: flex;
+                            // flex-wrap: wrap;
+                            @include tablet{
+                              width: 30px;
+                              flex-wrap: wrap;
+                            }
+                            .tv-amount {
+                              background-clip: padding-box;
+                              margin-right: 75px;
+                              padding-bottom: 30px;
+                              width: 100%;
+                              min-height: 100%;
+                              @include tablet{
+                                // width: 0;
+                                margin-right: 0;
+                              }
+                              .tv-amount-link {
+                                width: 9.375rem;
+                                a {
+                                  color: #212529;
+                                  font-weight: 700;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  .categories-list {
+                    .categoriesTv-news {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        }
+      }
+    }
+  }
+// @import "../../color/colors.scss";
+// @import "../../media-queries/meadia-queries.scss";
+// .content-category {
+//   flex-grow: 0;
+//   max-width: 8.333333%;
+//   flex-basis: 8.333333%;
+//   @include min-tablet{
+//     display: none;
+//   }
+//   .index-container {
+//     z-index: 9;
+//     position: relative;
+//     width: 80%;
+//     height: 100%;
+//     .contentcategories-margin {
+//       width: 89px;
+//       height: 590px;
+//       background-color: #fff;
+//       border: 0.4px solid #dadada;
+//       border-radius: 8px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       margin-top: 24px;
+//       position: sticky !important;
+//       top: 8px;
+//       left: 0;
+//       margin-bottom: 24px;
+//       .contentcategories-list {
+//         width: 100%;
+//         height: 100%;
+//         div {
+//           .categories {
+//             @extend %width-height;
+//             font-size: 1rem;
+//             @extend %font-weight;
+//             line-height: 1.5;
+//             color: #212529;
+//             -webkit-text-size-adjust: 100%;
+//             -webkit-tap-highlight-color: transparent;
+//             .categoryList-ul {
+//               display: flex;
+//               position: relative;
+//               @extend %width-height;
+//               justify-content: space-around;
+//               flex-direction: column;
+//               li {
+//                 text-align: -webkit-match-parent;
+//                 .categories-list {
+//                   cursor: pointer;
+//                   width: 100%;
+//                   padding: 10px;
+//                   .categories-list-full {
+//                     @extend %display-justify;
+//                     width: 100%;
+//                     .categories-list-flex {
+//                       @extend %display-center;
+//                       flex-direction: column;
+//                       .categories-icon-desc {
+//                         width: 44px;
+//                         height: 44px;
+//                         box-shadow: 0 2px 8px -2px rgb(0 0 0 / 25%);
+//                         border-radius: 50%;
+//                         @extend %display-center;
+//                         &:hover {
+//                           background-color: #8dc63f;
+//                           opacity: 0.3;
+//                         }
+//                       }
+//                       .categoriesTel-desc {
+//                         @extend %display-center;
+//                         padding: 2px;
+
+//                         .categories_text {
+//                           font-size: 10px;
+//                           opacity: 0.7;
+//                           font-weight: 500;
+//                         }
+//                       }
+//                     }
+//                   }
+//                   .categoriesTel-news {
+//                     background: #fff;
+//                     padding: 16px;
+//                     box-shadow: 0 1px 3px rgb(0 0 0 / 12%),
+//                       0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+//                     border: 0.4px solid #dadada;
+//                     border-radius: 8px;
+//                     height: 588px;
+//                     position: absolute;
+//                     width: 1173px;
+//                     top: 0;
+//                     left: 88px;
+//                     min-height: 290px;
+//                     border-radius: 4px;
+//                     display: none;
+//                     div {
+//                       width: 100%;
+//                       // height: 100%;
+//                       flex-direction: row;
+//                       .categories-news-tel {
+//                         @extend %width-height;
+//                         overflow-y: auto;
+//                         display: flex;
+//                         align-items: flex-start;
+//                         padding: 10px;
+//                         .categories-news-tel-masonary {
+//                           display: flex;
+//                           align-items: flex-start;
+//                           .categories-news-tel-masonaryColumn {
+//                             align-items: flex-start;
+//                             width: 100%;
+//                             min-height: 100%;
+//                             display: flex;
+//                             // flex-wrap: wrap;
+//                             .tel-amount {
+//                               background-clip: padding-box;
+//                               margin-right: 75px;
+//                               padding-bottom: 30px;
+//                               width: 100%;
+//                               min-height: 100%;
+//                               .tel-amount-link {
+//                                 width: 9.375rem;
+//                                 a {
+//                                   color: #212529;
+//                                   font-weight: 700;
+//                                 }
+//                               }
+//                               .telephones-list {
+//                                 ul {
+//                                   li {
+//                                     a {
+//                                       color: #212529;
+//                                       &:hover {
+//                                         color: #8dc63f;
+//                                       }
+//                                     }
+//                                   }
+//                                 }
+//                               }
+//                             }
+//                             //planset
+//                             .planset-amount {
+//                               background-clip: padding-box;
+//                               margin-right: 75px;
+//                               padding-bottom: 30px;
+//                               width: 40%;
+//                               min-height: 100%;
+//                               .planset-amount-link {
+//                                 width: 9.375rem;
+//                                 a {
+//                                   color: #212529;
+//                                   font-weight: 700;
+//                                 }
+//                               }
+//                               .planset-list {
+//                                 ul {
+//                                   li {
+//                                     a {
+//                                       color: #212529;
+//                                       &:hover {
+//                                         color: #8dc63f;
+//                                       }
+//                                     }
+//                                   }
+//                                 }
+//                               }
+//                             }
+//                             //ev telefonu
+//                             .homeTel-amount {
+//                               background-clip: padding-box;
+//                               margin-right: 75px;
+//                               padding-bottom: 30px;
+//                               width: 100%;
+//                               min-height: 100%;
+//                               .homeTel-amount-link {
+//                                 width: 9.375rem;
+//                                 a {
+//                                   color: #212529;
+//                                   font-weight: 700;
+//                                 }
+//                               }
+//                               .homeTelephone-list {
+//                                 ul {
+//                                   li {
+//                                     a {
+//                                       color: #212529;
+//                                       &:hover {
+//                                         color: #8dc63f;
+//                                       }
+//                                     }
+//                                   }
+//                                 }
+//                               }
+//                             }
+//                           }
+//                         }
+//                       }
+//                     }
+//                   }
+//                 }
+//                 &:hover {
+//                   .categories-list {
+//                     .categoriesTel-news {
+//                       display: block;
+//                     }
+//                   }
+//                 }
+//               }
+//               li {
+//                 .categories-list {
+//                   cursor: pointer;
+//                   width: 100%;
+//                   padding: 10px;
+//                   .categories-list-full {
+//                     @extend %display-justify;
+//                     width: 100%;
+//                     .categories-list-flex {
+//                       @extend %display-center;
+//                       flex-direction: column;
+//                       .categories-icon-aks {
+//                         width: 44px;
+//                         height: 44px;
+//                         box-shadow: 0 2px 8px -2px rgb(0 0 0 / 25%);
+//                         border-radius: 50%;
+//                         @extend %display-center;
+//                         &:hover {
+//                           background-color: #8dc63f;
+//                           opacity: 0.3;
+//                         }
+//                       }
+//                       .categoriesAks-desc {
+//                         text-align: center;
+//                         padding: 2px;
+//                         @extend %display-align;
+//                         .categories_text {
+//                           font-size: 10px;
+//                           opacity: 0.7;
+//                           font-weight: 500;
+//                         }
+//                       }
+//                     }
+//                   }
+//                   .categoriesAks-news {
+//                     display: none;
+//                     background: #fff;
+//                     padding: 16px;
+//                     box-shadow: 0 1px 3px rgb(0 0 0 / 12%),
+//                       0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+//                     border: 0.4px solid #dadada;
+//                     border-radius: 8px;
+//                     height: 588px;
+//                     position: absolute;
+//                     width: 1173px;
+//                     top: 0;
+//                     left: 88px;
+//                     min-height: 290px;
+//                     border-radius: 4px;
+//                     div {
+//                       width: 100%;
+//                       // height: 100%;
+//                       flex-direction: row;
+//                       .categories-news-aks {
+//                         @extend %width-height;
+//                         overflow-y: auto;
+//                         display: flex;
+//                         align-items: flex-start;
+//                         padding: 10px;
+//                         .categories-news-aks-masonary {
+//                           display: flex;
+//                           align-items: flex-start;
+//                           .categories-news-aks-masonaryColumn {
+//                             align-items: flex-start;
+//                             width: 100%;
+//                             min-height: 100%;
+//                             display: flex;
+//                             // flex-wrap: wrap;
+//                             .aks-amount {
+//                               background-clip: padding-box;
+//                               margin-right: 75px;
+//                               padding-bottom: 30px;
+//                               width: 100%;
+//                               min-height: 100%;
+//                               .aks-amount-link {
+//                                 width: 9.375rem;
+//                                 a {
+//                                   color: #212529;
+//                                   font-weight: 700;
+//                                 }
+//                               }
+//                               .aksesuar-list {
+//                                 ul {
+//                                   li {
+//                                     a {
+//                                       color: #212529;
+//                                       &:hover {
+//                                         color: #8dc63f;
+//                                       }
+//                                     }
+//                                   }
+//                                 }
+//                               }
+//                             }
+//                           }
+//                         }
+//                       }
+//                     }
+//                   }
+//                 }
+//                 &:hover {
+//                   .categories-list {
+//                     .categoriesAks-news {
+//                       display: block;
+//                     }
+//                   }
+//                 }
+//               }
+//               li {
+//                 .categories-list {
+//                   cursor: pointer;
+//                   width: 100%;
+//                   padding: 10px;
+//                   .categories-list-full {
+//                     @extend %display-justify;
+//                     width: 100%;
+//                     .categories-list-flex {
+//                       @extend %display-center;
+//                       flex-direction: column;
+//                       .categories-icon-tv {
+//                         width: 44px;
+//                         height: 44px;
+//                         box-shadow: 0 2px 8px -2px rgb(0 0 0 / 25%);
+//                         border-radius: 50%;
+//                         @extend %display-center;
+//                         &:hover {
+//                           background-color: #8dc63f;
+//                           opacity: 0.3;
+//                         }
+//                       }
+//                       .categoriesTv-desc {
+//                         text-align: center;
+//                         padding: 2px;
+//                         @extend %display-align;
+//                         .categories_text {
+//                           font-size: 10px;
+//                           opacity: 0.7;
+//                           font-weight: 500;
+//                         }
+//                       }
+//                     }
+//                   }
+//                   .categoriesTv-news {
+//                     display: none;
+//                     background: #fff;
+//                     padding: 16px;
+//                     box-shadow: 0 1px 3px rgb(0 0 0 / 12%),
+//                       0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+//                     border: 0.4px solid #dadada;
+//                     border-radius: 8px;
+//                     height: 588px;
+//                     position: absolute;
+//                     width: 1173px;
+//                     top: 0;
+//                     left: 88px;
+//                     min-height: 290px;
+//                     border-radius: 4px;
+//                     div {
+//                       width: 100%;
+//                       flex-direction: row;
+//                       .categories-news-tv {
+//                         width: 100%;
+//                         height: 100%;
+//                         overflow-y: auto;
+//                         display: flex;
+//                         align-items: flex-start;
+//                         padding: 10px;
+//                         .categories-news-tv-masonary {
+//                           display: flex;
+//                           align-items: flex-start;
+//                           .categories-news-tv-masonaryColumn {
+//                             align-items: flex-start;
+//                             width: 100%;
+//                             min-height: 100%;
+//                             display: flex;
+//                             // flex-wrap: wrap;
+//                             .tv-amount {
+//                               background-clip: padding-box;
+//                               margin-right: 75px;
+//                               padding-bottom: 30px;
+//                               width: 100%;
+//                               min-height: 100%;
+//                               .tv-amount-link {
+//                                 width: 9.375rem;
+//                                 a {
+//                                   color: #212529;
+//                                   font-weight: 700;
+//                                 }
+//                               }
+//                             }
+//                           }
+//                         }
+//                       }
+//                     }
+//                   }
+//                 }
+//                 &:hover {
+//                   .categories-list {
+//                     .categoriesTv-news {
+//                       display: block;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

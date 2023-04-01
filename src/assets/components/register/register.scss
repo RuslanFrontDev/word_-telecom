@@ -1,0 +1,84 @@
+@import "../color/colors.scss";
+@import "../media-queries/meadia-queries.scss";
+.forms-firebase {
+  background-color: #2d2e2b37;
+  padding-bottom: 30px;
+  padding-top: 1px;
+  @include min-tablet{
+   padding-top: 140px;
+ }
+  .container {
+    .returnHome {
+      padding: 20px;
+      a {
+      }
+      .homedat {
+      }
+      h5 {
+      }
+    }
+  }
+
+  .form-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .register-formul {
+      width: 350px;
+      flex-basis: 350px;
+      background-color: rgb(125, 125, 135);
+      border-radius: 8px;
+      border-style: groove;
+      border-width: 5px;
+      border-color: blue;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .email-label {
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          padding: 8px;
+        }
+        .email-input {
+          width: 280px;
+          height: 100%;
+          input {
+            width: inherit;
+            height: inherit;
+            padding: 18px;
+            border-radius: 5px;
+            flex-grow: 1;
+          }
+        }
+      }
+      div {
+        .password-label {
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          padding: 8px;
+        }
+      }
+      .register-firebase-btn {
+        width: 120px;
+        height: 50px;
+        background-color: blue;
+        margin: 10px auto;
+        border-radius: 8px;
+        button {
+         border-radius: 8px;
+          width: inherit;
+          height: inherit;
+          background-color: blue;
+          padding: 5px;
+          color: white;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

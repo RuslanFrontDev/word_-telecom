@@ -1,0 +1,96 @@
+@import "../../../color/colors.scss";
+@import "../../../media-queries/meadia-queries.scss";
+.SumPrice {
+  flex-grow: 0;
+  max-width: 25%;
+  flex-basis: 25%;
+  @include min-tablet{
+    max-width: 100%;
+    flex-basis: 100%;
+    
+  }
+  .basket-summary {
+    margin-left: 24px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 23px;
+    @include min-tablet{
+      margin-left: 0;
+      
+    }
+  }
+  .basket-summaryInfo {
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 17px;
+    margin-bottom: 16px;
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 23px 0 8px;
+    }
+    .basket-cartTotalPrice {
+      margin-bottom: 16px;
+      span {
+        color: #adadad;
+        font-size: 12px;
+      }
+      .totalPriceBasket {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .basketManat {
+          width: 16px;
+          height: 12px;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+  .basketOrderBtnContainer {
+   background-color: #383e42;
+   padding: 16px;
+   border-radius: 4px;
+   button{
+      background: #8dc63f;
+      width: 100%;
+      color: #fff;
+      border-radius: 5px;
+      height: 29px;
+      font-weight: 600;
+      padding: 0;
+      line-height: inherit;
+   }
+  }
+  .basket-totalPriceBottomContainer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 12px;
+   color: #fff;
+   font-size: 12px;
+   font-weight: 600;
+  }
+  .basket-totalPriceBasket{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   span{
+      font-size: 14px;
+      font-weight: 600;
+   }
+   .manatsvg{
+      width: 16px;
+      height: 12px;
+      margin-left: 4px;
+      svg{
+         width: 15px;
+        
+      }
+   }
+  }
+}

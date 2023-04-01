@@ -1,0 +1,100 @@
+@import "../color/colors.scss";
+@import "../media-queries/meadia-queries.scss";
+.likeCart {
+  background-color: #dadada;
+  @include min-tablet{
+    padding-top: 170px;
+  }
+  @include galaxy-fold{
+    padding-top: 200px;
+  }
+  .container {
+    padding: 0 24px;
+    .likeCart-padding {
+      padding: 18px;
+      .likeCart-container {
+        background-color: #fff;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .likeCart-Img {
+          max-width: 25%;
+          flex-basis: 25%;
+          flex-grow: 0;
+          border-right: 1px solid red;
+          img {
+            width: -webkit-fill-available;
+          }
+        }
+        .likeCartNameandLikePrice {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          line-height: 40px;
+          width: 350px;
+          margin: 0 auto;
+          .likeCartName {
+            font-size: 30px;
+            border-bottom: 1px solid red;
+            @include min-tablet{
+              font-size: 20px;
+            }
+            @include galaxy-fold{
+              font-size: 15px;
+            }
+          }
+          .likePrice {
+            width: 300px;
+            background: linear-gradient(
+              to left,
+              rgb(120, 52, 52),
+              #35b1f4 50%,
+              #eee 75%
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            @include min-tablet{
+              height: 25px;
+            }
+            @include min-tablet{
+              width: 100%;
+            }
+            span {
+              font-size: 25px;
+              font-weight: 700;
+              color: red;
+              @include galaxy-fold{
+                font-size: 15px;
+              }
+            }
+          }
+          .likeCartbtn {
+            margin-top: 10px;
+            @include min-tablet{
+              height: 50px;
+            }
+            button {
+              background-color: green;
+              font-size: 20px;
+              padding: 8px;
+              color: #eee;
+              border-radius: 5px;
+              @include min-tablet{
+                height:45px;
+                padding: 3.5px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@import "./empty/likeEmpty.scss"

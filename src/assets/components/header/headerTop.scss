@@ -1,0 +1,219 @@
+@import "../color/colors.scss";
+@import "../media-queries/meadia-queries.scss";
+%display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%display-align {
+  display: flex;
+  align-items: center;
+}
+
+%display-spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+%font-weight {
+  font-weight: 400;
+}
+%font-size {
+  font-size: 14px;
+}
+.general-header {
+  
+  @include min-tablet{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .header-top-in {
+    padding: 0 24px;
+    @include max-tablet {
+      display: none;
+    }
+    .header-top {
+      @extend %display-spacebetween;
+      padding: 8px 0;
+
+      .header-top-logo {
+        @extend %display-align;
+        width: 233.31px;
+        height: 34px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $darkaudi;
+        background-color: $light;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        a[href="/"] {
+          @extend %display-align;
+          margin-right: 12px;
+          color: #000;
+          @extend %font-size;
+          .logo {
+            --tw-border-opacity: 1;
+            border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+            margin-right: 8px;
+            cursor: pointer;
+            height: 100%;
+            vertical-align: middle;
+            display: block;
+            .wt-num-logo {
+              --tw-border-opacity: 1;
+              border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+              cursor: pointer;
+              height: 100%;
+              vertical-align: middle;
+              display: block;
+            }
+          }
+        }
+        .wt-num {
+          @extend %font-size;
+          width: 63.655px;
+          text-align: center;
+          .wt-tel {
+            margin-right: 12px;
+            .wt-number {
+              color: $darkaudi;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .wt-about {
+        display: flex;
+        line-height: 30px;
+        .wt-about-category {
+          display: flex;
+          & li {
+            margin: 0 13px;
+            text-align: -webkit-match-parent;
+          }
+          & li:first-child {
+            margin-left: 0;
+          }
+          & li:last-child {
+            margin-right: 0;
+          }
+          li {
+            .a[href="/korporativ-satishlar"] {
+              cursor: pointer;
+              @extend %display-align;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .wt-about-span {
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+      }
+    }
+  }
+}
+
+// .header-top-in {
+//   padding: 0 24px;
+//  .header-top {
+//    display: flex;
+//    justify-content: space-between;
+//    padding: 8px 0;
+
+//    .header-top-logo {
+//      display: flex;
+//      width: 233.31px;
+//      height: 34px;
+//      align-items: center;
+//      font-size: 1rem;
+//      font-weight: 400;
+//      line-height: 1.5;
+//      color: #212529;
+//      background-color: #fff;
+//      -webkit-text-size-adjust: 100%;
+//      -webkit-tap-highlight-color: transparent;
+//    }
+//    .wt-number{
+//      color: #212529;
+//      font-weight: 700;
+
+//     }
+
+//    .wt-num {
+//      font-size: 14px;
+//    }
+
+//    a[href="/"] {
+//      display: flex;
+//      align-items: center;
+//      margin-right: 12px;
+//      color: #000 !important;
+//      font-size: 14px;
+//    }
+//    .logo {
+//      --tw-border-opacity: 1;
+//      border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+//      margin-right: 8px;
+//      cursor: pointer;
+//      height: 100%;
+//      vertical-align: middle;
+//      display: block;
+//    }
+//    .wt-num-logo {
+//      --tw-border-opacity: 1;
+//      border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+//      cursor: pointer;
+//      height: 100%;
+//      vertical-align: middle;
+//      display: block;
+//    }
+//    .wt-num {
+//      width: 63.655px;
+//      text-align: center;
+//    }
+//    .wt-tel {
+//      margin-right: 12px;
+//    }
+//    .wt-about {
+//      display: flex;
+//    }
+//    .wt-about-category {
+//      display: flex;
+//    }
+//    .wt-about-category li:first-child {
+//      margin-left: 0;
+//    }
+//    .wt-about-category li {
+//      margin: 0 13px;
+//      text-align: -webkit-match-parent;
+//    }
+//    .wt-about-category li:last-child {
+//      margin-right: 0;
+//    }
+//    .a[href="/korporativ-satishlar"] {
+//      cursor: pointer;
+//      display: flex;
+//      align-items: center;
+//      font-size: 12px;
+//    }
+//    .wt-about-span {
+//      font-size: 0.8rem;
+//      font-weight: 400;
+//      line-height: 1.5;
+//      color: #212529;
+//      background-color: #fff;
+//      -webkit-text-size-adjust: 100%;
+//      -webkit-tap-highlight-color: transparent;
+//    }
+//  }
+// }

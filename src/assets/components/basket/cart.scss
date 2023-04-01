@@ -1,0 +1,23 @@
+@import "../color/colors.scss";
+@import "../media-queries/meadia-queries.scss";
+.cartContent{
+   padding: 1px 0px 70px 0px;
+   background-color: gainsboro ;
+   @include min-tablet{
+      padding-top: 160px;
+   }
+   @include galaxy-fold{
+      padding-top: 180px;
+    }
+   .container{
+      padding: 0,24px;
+   }
+   .sebet{
+      margin-bottom: 23px;
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 5px;
+   }
+}
+@import "./returnhomeComponent/returnHomeComponent.scss";
+@import './productContainer/productContainer.scss'

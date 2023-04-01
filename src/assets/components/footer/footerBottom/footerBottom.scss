@@ -1,0 +1,36 @@
+@import "../../color/colors.scss";
+@import "../../media-queries/meadia-queries.scss";
+.footerbottom {
+  border-top: 1px solid #fafafa;
+  padding-top: 12px;
+  justify-content: space-between;
+  display: flex;
+  @include mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footernavigation-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile{
+      margin-top: 35px;
+    }
+  }
+  
+  .footernavigation-flex > li {
+    color: #fafafa;
+    background-color: #fafafa;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 7px;
+    border-radius: 20%;
+    font-weight: 700;
+  }
+}
+.footerbottom > div > p {
+   color: #fafafa;
+ }
